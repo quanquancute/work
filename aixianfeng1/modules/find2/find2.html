@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+	    <link rel="stylesheet" type="text/css" href="find2.css"/>
+	</head>
+	<body>
+		<div id="page">
+			<div id="f_header">
+				<span><a href="#home"><img src="images/myimg/left.jpg"/></a></span>
+				<span><input type="text" value="请输入商品名称"/></span>
+				<span>搜索</span>
+			</div>
+			<div id="f_main">
+				<div id="f_hot">
+					<div class="f_title"></div>
+			<!--	<div class="title"/>--><h1>热门搜索</h1><!--</div>-->
+					<div class="content">
+					<a href="#">大闸蟹</a>
+					<a href="#">水</a>
+					<a href="#">中秋月饼</a>
+					<a href="#">酸奶</a>
+					<a href="#">啤酒</a>
+					<a href="#">西瓜</a>
+					<a href="#">大荔冬枣</a>
+					<a href="#">贝尔蛋糕</a>
+					<a href="#">月盛斋</a>
+					</div>
+				</div>
+					<div id="history">
+						<!--<div class="title"/>--><h1>历史记录</h1><!--</div>-->
+						<div class="content">
+							<a href="#">大闸蟹</a>
+						</div>
+						
+					</div>
+			<!--	</div>-->
+				
+			</div>
+			<span id="delate"><input type="button" value="清空历史"/></span>
+		</div>
+		
+		<script type="text/javascript">
+		document.documentElement.style.fontSize = innerWidth/10+"px";
+		window.onresize = function(){
+			document.documentElement.style.fontSize = innerWidth/10+"px";
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+#page{width:100%; background: #efefef;font-size: 0.318302rem;border:1px solid #e2e2e4;}
+#order_header{
+	width: 100%;
+	height: 1.4375rem;
+	background-color: #f9fafd;
+	border-bottom: 2px solid #e0e0e0;
+}
+#order_header h1{
+    font-size: 0.40625rem;
+    font-weight: bold;
+    height: 1.40625rem;
+    line-height: 1.40625rem;
+    text-align: center;
+}
+
+/*-------------------------nav部分-------------------------*/
+#order_nav {
+	width: 100%;
+	height: 2.15625rem;
+	background-color: #fff;
+	border-top: 1px solid #a2a2a2;
+	border-bottom: 1px solid #a2a2a2;
+	margin-top: 0.15625rem;
+}
+#order_nav div ul{
+	width: 100%;
+	height: 1.0625rem;
+	margin-top: 0.03125rem; 
+	display: flex;
+	justify-content: space-around;
+}
+#order_nav div:first-of-type{
+	border-bottom: 2px solid #d2d2d2;
+}
+#order_nav div ul li{
+	height: 1.0625rem;
+	line-height: 1.0625rem;
+	color: #898989;
+	font-size: 0.359375rem;
+}
+
+/*-------------------------main部分------------------------*/
+#order_main{
+	width: 100%;
+    border-top: 1px solid #a2a2a2;
+    background-color: #fff;
+}
+#order_title{
+	width: 100%;
+    height: 0.96875rem;
+    border-top: 1px solid #a4a4a4;
+    border-bottom: 2px solid #d2d2d2;
+    line-height: 0.9375rem;
+    text-indent: 0.265625rem;
+    margin-top: 0.25rem;
+    background: #fff;
+}
+#order_title h2{
+/*	width: 0.15625rem;
+	height: 0.390625rem;
+	margin-right: 0.296875rem*/;
+	font-size: 0.375rem;
+	color: #a6a6a6;
+	text-indent: 0.625rem;
+}
+#order_title h2 img{
+	width: 0.15625rem;
+	height: 0.390625rem;
+	line-height: 0.96875rem;
+	margin-right: 0.3125rem;
+}
+#order_main .order_shop{
+	height: 3.53125rem;
+    width: 100%;
+    border-bottom: 2px solid #d2d2d2;
+    display: flex; 
+    position: relative;   
+}
+.order_shop img{
+	width: 4.734375rem;
+	height: 3.484375rem;
+}
+.order_shop div:last-of-type{
+	width: 4.21875rem;
+    height: 3.5rem;
+}
+.order_shop div:last-of-type p:first-of-type{
+	font-size: 0.421875rem;
+	color: #7b7b7b;
+	display: inline-block;
+	margin-top: 0.453125rem;
+}
+.order_shop div:last-of-type p:last-of-type{
+	display: inline-block;
+	font-size: 0.390625rem;
+	font-weight: bold;
+	color: #f1361d;
+	margin-top: 0.78125rem;
+}
+.order_shop div:last-of-type p:last-of-type span{
+	font-size: 0.234375rem;
+	color: #999999;
+	text-decoration: line-through;
+}
+.car{
+	width: 1.078125rem;
+	height: 1.078125rem;
+	position: absolute;
+	top:1.921875rem;
+	right: 0.625rem;
+}
+.car img{
+	width: 1.078125rem;
+	height: 1.078125rem;
+}
+
+aside{
+	width: 100%;
+	height: 1.5625rem;
+	background: rgba(239,229,213,0.95);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+aside dl{
+	min-width: 0.71875rem;
+}
+aside dl img{
+	display: block;
+	margin: 0 auto;
+	width: 0.578125rem;
+	height: 0.609375rem;
+	margin-bottom: 0.1875rem;
+}
+aside dl dd{
+	text-align: center;
+}
+aside span{
+	display: block;
+	width: 0.5625rem;
+	height: 0.5625rem;
+	border-radius: 50%;
+	background: #ff4400;
+	font-size: 0.21875rem;
+	line-height: 0.5625rem;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top:0.15625rem;
+	right: 1.875rem;

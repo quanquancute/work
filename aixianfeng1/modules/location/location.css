@@ -1,0 +1,27 @@
+body{
+	background: #ffd82b;
+}
+#page{
+	width:100%; 
+	background: #ffd82b;
+	font-size: 0.318302rem;
+}
+#page p:first-of-type img{
+	width: 6.234375rem;
+	height: 3.03125rem;
+	margin-top: 3.703125rem;
+	margin-left: 1.953125rem;
+}
+#page p:nth-of-type(2) img{
+    width: 1.140625rem;
+    height: 1.140625rem;
+    margin-top: 1.09375rem;
+    margin-left: 4.4375rem;
+}
+#page p:nth-of-type(3){
+	display: block;
+	margin-left: 4.4375rem;
+	margin-top: 0.109375rem;
+	font-size: 0.421875rem;
+	font-weight: bold;
+} 

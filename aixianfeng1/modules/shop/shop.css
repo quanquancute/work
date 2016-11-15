@@ -1,0 +1,242 @@
+#page{
+	width:100%; 
+	background: #efefef;
+	font-size: 0.318302rem;
+	border:1px solid #e2e2e4;
+}
+#shop_header{
+	width: 100%;
+	background-color: #ffd600;
+	height: 1.4375rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#shop_header span:first-of-type{
+	opacity: 0;
+}
+#shop_header span:nth-of-type(2){
+	font-size: 0.390625rem;
+	text-align: center;
+	font-weight: bold;
+	color: #333333;	
+}
+#shop_header span:nth-of-type(2)>img{
+	width: 0.265625rem;
+	height: 0.25rem;
+	margin-left: 0.09375rem;
+}
+#shop_header span>img{
+	width: 0.921875rem;
+	height: 1.4375rem;
+}
+#sousuo{
+	width: 0.828125rem;
+	height: 1.4375rem;
+}
+#shop_main{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+#shop_left{
+	width: 2.375rem;
+/*	height: 12.625rem;*/
+}
+#shop_left ul li{
+	height: 1.359375rem;
+	line-height: 1.359375rem;
+	border-bottom: 2px solid #e0e0e0;
+	text-align: center;
+	background: #f8f8f8;
+}
+#shop_left ul li{
+	position: relative;
+}
+#shop_left ul li:nth-of-type(2) img{
+	width: 0.84375rem;
+	height: 0.875rem;
+	position: absolute;
+	top:0;
+	left: 1.53125rem;
+}
+#shop_left ul li:first-of-type{
+	border-left: 10px solid #f8f8f8;
+}
+#shop_left ul li a{
+	color: #6d6d6d;
+	font-size: 0.359375rem;
+}
+#shop_right{
+	width: 7.5rem;
+	/*height: 14.3125rem;*/
+	background-color: #fff;
+}
+#shop_title{
+	width: 7.5rem;
+	height: 1.28125rem;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid #dddddd;
+}
+#shop_title a{
+	display: block;
+	width: 3.796875rem;
+	height: 0.5625rem;
+	line-height: 0.5625rem;
+	text-align: center;
+	font-size: 0.34375rem;
+	color: #777777;
+	border-right: 2px solid #dddddd;
+	margin-top: 0.34375rem;
+}
+#shop_title a:last-of-type{
+	border-right: none;
+}
+#shop_title a img{
+	width: 0.3125rem;
+	height: 0.15625rem;
+	margin-left: 0.15625rem;
+}
+#shop_shop{
+	width: 7.5rem;
+	height: 13.203125rem;	
+	overflow: auto;
+}
+.shop_buy{
+	height: 3.4375rem;
+	width: 7.5rem;
+	display: flex;
+    border-bottom: 2px solid #e0e0e0;
+    position: relative;
+    align-items: center;
+}
+.img img{
+	width: 2.8125rem;
+	height: 2.78125rem;
+}
+.price{
+	height: 2.1875rem;
+	width: 4.6875rem;
+	margin-top: 0.25rem;
+}
+.price p:nth-of-type(1){
+    font-size: 0.359375rem;
+    line-height: 0.59375rem;
+    color: #232b33;
+}
+.price p:nth-child(2){
+	line-height: 0.703125rem;
+}
+.price p:nth-child(2) span/*:nth-of-type(2)*/{
+	display: inline-block;
+	width: 1.5rem;
+	height: 0.4375rem;
+	background: #ff0000;
+	color: #fff;
+	border-radius: 0.15625rem; 
+	display: inline-flex;
+    justify-content: center;
+	align-items: center;
+	border: 2px solid #ff0000;
+}
+.price p:nth-of-type(3){
+	line-height: 0.625rem;
+	color: #a7a7a7;
+	font-size: 0.265625rem;
+}
+.price p:nth-of-type(4){
+	font-size: 0.265625rem;
+	line-height: 0.4375rem;
+	color: red;
+}
+.price p:nth-of-type(4) span{
+	color: #999999;
+	text-decoration: line-through;
+	display: inline-block;
+	margin-left: 0.21875rem;
+}
+.shop_buy div:first-of-type img{
+	width: 2.8125rem;
+	height: 2.78125rem;
+}
+.shop_jian{
+	display: none;
+	width: 0.875rem;
+	height: 0.875rem;
+	border: 2px solid #e2e2e2;
+	border-radius: 50%;
+	position: absolute;
+	top: 1.59375rem;
+	right: 1.875rem;
+}
+.shop_jian img{
+	margin: 0.234375rem;
+	width: 0.34375rem;
+	height: 0.34375rem;
+}
+
+.shop_jia{
+	display: block;
+	width: 0.875rem;
+	height: 0.875rem;
+	border: 2px solid #e2e2e2;
+	border-radius: 50%;
+	position: absolute;
+	top: 1.59375rem;
+	left: 6.28125rem;
+}
+.shop_jia img{
+	margin: 0.234375rem;
+	width: 0.34375rem;
+	height: 0.34375rem;
+}
+.shop_text{
+	display: none;
+	position: absolute;
+	width: 0.625rem;
+	height: 0.546875rem;
+	bottom: 1.015625rem;
+    right: 1.015625rem;
+	font-size: 0.3125rem;
+	border: 0;
+}
+/*----------------aside部分---------------------*/
+.footer{
+	width: 100%;
+	height: 1.5625rem;
+	background: rgba(239,229,213,0.95);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+.footer dl{
+	min-width: 0.71875rem;
+}
+.footer dl img{
+	display: block;
+	margin: 0 auto;
+	width: 0.578125rem;
+	height: 0.609375rem;
+	margin-bottom: 0.1875rem;
+}
+.footer dl dd{
+	text-align: center;
+}
+.number{
+	display: block;
+	width: 0.5625rem;
+	height: 0.5625rem;
+	border-radius: 50%;
+	background: #ff4400;
+	font-size: 0.21875rem;
+	line-height: 0.5625rem;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top:0.15625rem;
+	right: 1.875rem;

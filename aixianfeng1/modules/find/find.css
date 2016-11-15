@@ -1,0 +1,119 @@
+/*body{
+	position: relative;
+}*/
+#page{width:100%; background: #efefef;position: relative;}
+#find_header{
+	width: 100%;
+	height: 1.4375rem;
+	background-color: #f9fafd;
+	border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f9fafd;
+}
+#find_header span:first-of-type{
+	
+}
+#find_header span:first-of-type img{
+	
+}
+#find_header span:nth-of-type(2) input[type=text]{
+	width: 6.25rem;
+	height: 0.875rem;
+	border: 2px solid #e0e0e0;
+	outline: none;
+	border-radius: 10px;
+	background:  #f9fafd url(../myimg/find.jpg) no-repeat 0.203125rem center;
+	text-indent: 0.796875rem;
+	color: #a9a9a9;
+}
+
+/*------------------------main部分-----------------------*/
+#find_main{
+	width: 100%;
+	height: 15.625rem;
+    background-color: #efefef;
+    position: relative;
+}
+.find_shop{
+     width: 4.546875rem;
+     height: 7.046875rem;
+     margin-top: 0.296875rem;
+     margin-left: 0.3125rem;
+     display: inline-block;
+     background: #fff;
+     position: relative;
+}
+.find_shop img{
+	width: 4.546875rem;
+	height: 4.484375rem;
+}
+.find_shop>dd{
+	display: block;
+	padding-left: 0.171875rem;
+}
+.find_shop dd:nth-of-type(1){
+	font-size: 0.359375rem;
+	line-height: 0.59375rem;
+}
+.find_shop dd:nth-of-type(2) span{
+	display: inline-flex;
+	width: 0.875rem;
+	height: 0.4375rem;
+    border: 2px solid #ff0000;
+    border-radius: 0.15625rem; 
+    justify-content: center;
+	align-items: center;
+	color: #ff0000;
+	margin-right: 0.203125rem;
+}
+.find_shop dd:nth-of-type(3){
+	color: #999999;
+	line-height: 0.671875rem;
+	font-size: 0.34375rem;
+}
+.find_shop dd:nth-of-type(4){
+	font-size: 0.265625rem;
+	line-height: 0.609375rem;
+	color: #ff3800;
+}
+.find_shop dd:nth-of-type(4) span{
+	color: #999999;
+	text-decoration: line-through;
+}
+.none{
+	display: block;
+	width: 1.078125rem;
+	height: 0.46875rem;
+	font-size: 0.359375rem;
+	color: #ff3800;
+	position: absolute;
+	bottom: 0.28125rem;
+	right: 0.34375rem;
+}
+
+#car{
+	width: 1.90625rem;
+	height: 1.90625rem;
+	position: absolute;
+	bottom: 0.21875rem;
+	right: 0.1875rem;
+}
+#car img{
+	width: 1.90625rem;
+	height: 1.90625rem;
+}
+#red{
+	width: 0.5625rem;
+	height: 0.5625rem;
+	display: block;
+	background: #ff4400;
+	color: #fff;
+	line-height: 0.5625rem;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 1.4375rem;
+	right: 0.28125rem
+}
