@@ -35,24 +35,41 @@ define(['text!./cart.html','css!./cart.css'],function(html){
     
     function upNum(){
     	$(".increase").click(function(){
-    		var self = $(this);
+            var self = $(this);
     		var num = parseInt(self.siblings("input").val());
     		var text = $("#index_number");
-    		text.innerHTML = num;
-            num+=1;
-            self.siblings("input").val(num);
+    		var a = $("#index_number").html();
+    		text.html(num);
+    		num+=1;
+    		a++;
+    		$("#index_number").html(a);
+      		 if(a==0){
+    	   	$("#index_number").css("display","none");
+    	   }
+    		if(num>0){
+    			self.siblings(".shop_jian").fadeIn();
+    			self.siblings(".shop_text").fadeIn();
+    			$("#index_number").css("display","block");
+    		}
+    		self.siblings("input").val(num);
+    		
     	})
     }
     
   function downNum(){
   	$(".decrease").click(function(){
-  		var self = $(this);
-  		var num = parseInt(self.siblings("input").val());
-  		if(num>0){
-  			num -=1;
-  		}
-  		self.siblings("input").val(num);
-  	})
+            var b = $("#index_number").html();
+    		var self = $(this);
+    		var num = parseInt(self.siblings("input").val());
+    		var text = $("#index_number");
+    		b--;
+    		if(b<=0){
+    		$("#index_number").hide();
+    		}	
+    		$("#index_number").html(b);
+    		num--;
+    		self.siblings("input").val(num);
+    	})
   }
 
     

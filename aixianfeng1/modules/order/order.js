@@ -33,19 +33,28 @@ define(['text!./order.html','css!./order.css'],function(html){
     function increase(){
     	var car = document.getElementsByClassName("car");
     	var num = document.getElementById("index_number");
-    	var a = 1;
+        var a = $("#index_number").html();
     	for(var i=0;i<car.length;i++){
     		car[i].onclick = function(){
     			a++;
-    		num.innerHTML = a;
+    		$("#index_number").html(a);
+    		$("#index_number").show();
     		}
     	}
     }
-
+     
+     function move(){
+     	
+		$(".things").click(function(){
+			$(".things").css("border-bottom","none")
+			$(this).css("border-bottom","2px solid #efefef");
+		})
+     }
 
 	return{
 		render:render,
 		increase:increase,
-		getData:getData
+		getData:getData,
+		move:move
 	}
 })

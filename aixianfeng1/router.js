@@ -40,6 +40,7 @@ define(['backbone'],function(){
 	          order.render();
 	          order.getData();
 	          order.increase();
+	          order.move();
 	        })
       },
       cartFn: function() {

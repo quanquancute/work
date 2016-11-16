@@ -24,7 +24,7 @@
 	text-align: center;
 }
 #index_number{
-	display: block;
+	display: none;
 	width: 0.5625rem;
 	height: 0.5625rem;
 	border-radius: 50%;
@@ -36,3 +36,4 @@
 	position: absolute;
 	top:0.15625rem;
 	right: 1.875rem;
+}

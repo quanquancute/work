@@ -37,69 +37,81 @@ define(['text!./shop.html','css!./shop.css'],function(html){
     	});
     }
 
-    function add(){
-    	 var add = document.getElementsByClassName("shop_jia");
-	     var num = document.getElementById("index_number");
-	     var text = document.getElementsByClassName("shop_text");
-	     
-		var a = 1;
-		
-        for(var i=0;i<add.length;i++){
-        	add[i].onclick = function(){
-               	a++;
-        		num.innerHTML = a;
-        	    text.innerHTML = num.innerHTML;
-        	    
-        	}
-        }
-	}
-   
-	 function reduce(){
-	 	var reduce = document.getElementsByClassName("shop_jian");
-	   	var num = document.getElementById("index_number");
-		var text = document.getElementsByClassName("shop_text");
-		for(var i=0;i<reduce.length;i++){
-	   		reduce[i].onclick = function(){
-				
-	   		}
-		}
-	   }
+//  function add(){
+//  	 var add = document.getElementsByClassName("shop_jia");
+//	     var num = document.getElementById("index_number");
+//	     var text = document.getElementsByClassName("shop_text");
+//	     
+//		var a = 1;
+//		
+//      for(var i=0;i<add.length;i++){
+//      	add[i].onclick = function(){
+//             	a++;
+//      		num.innerHTML = a;
+//      	    text.innerHTML = num.innerHTML;
+//      	    
+//      	}
+//      }
+//	}
+// 
+//	 function reduce(){
+//	 	var reduce = document.getElementsByClassName("shop_jian");
+//	   	var num = document.getElementById("index_number");
+//		var text = document.getElementsByClassName("shop_text");
+//		for(var i=0;i<reduce.length;i++){
+//	   		reduce[i].onclick = function(){
+//				
+//	   		}
+//		}
+//	   }
 
     
     function addGoods(){
+    		
+
     	$(".shop_jia").click(function(){
     		var self = $(this);
     		var num = parseInt(self.siblings("input").val());
     		var text = $("#index_number");
+    		var a = $("#index_number").html();
     		text.html(num);
     		num+=1;
-    		
+    		a++;
+    		$("#index_number").html(a);
+      		 if(a==0){
+    	   	$("#index_number").css("display","none");
+    	   }
     		if(num>0){
     			self.siblings(".shop_jian").fadeIn();
     			self.siblings(".shop_text").fadeIn();
+    			$("#index_number").css("display","block");
     		}
     		self.siblings("input").val(num);
     		
     	})
+
     }
     
     function reduceGoods(){
     	$(".shop_jian").click(function(){
-          
+            var b = $("#index_number").html();
     		var self = $(this);
     		var num = parseInt(self.siblings("input").val());
     		var text = $("#index_number");
-    		text.html(num);
-    		
-    	if(num>0){
-    		num-=1;
-    	}
+//  		text.html();
+    		b--;
+    		if(b<=0){
+    		$("#index_number").hide();
+    		}	
+    		$("#index_number").html(b);
+    		num--;
     	if(num<1){
     		self.fadeOut();
     		self.siblings(".shop_text").fadeOut();
     	}
     		self.siblings("input").val(num);
     	})
+    
     }
 	return {
 		render:render,
